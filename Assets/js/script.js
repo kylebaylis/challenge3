@@ -5,6 +5,7 @@ passLow = "abcdefghijklmnopqrstuvwxyz";
 passHigh = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 passNum = "0123456789";
 passChar = "!#$%&()*+,-./:;<=>?@[\]^_`{|}~";
+newPass = "";
 
 // Write password to the #password input
 function writePassword() {
@@ -43,6 +44,11 @@ function writePassword() {
   else {
     window.alert("Click 'Generate Password' if you change your mind!");
   }
+
+  for (var i = 0; i < passLength; i++) {
+    
+  }
+  // parseInt(passLength); to change passLength to int if needed
 
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
