@@ -38,7 +38,7 @@ function writePassword() {
         var passContent = passContent + passChar;
       }
     }
-    // window.alert(passContent); to see if each selection works
+    window.alert(passContent); // to see if each selection works
   }
   else {
     window.alert("Click 'Generate Password' if you change your mind!");
