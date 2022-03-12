@@ -42,11 +42,21 @@ function writePassword() {
   else {
     window.alert("Click 'Generate Password' if you change your mind!");
   }
-  // these 3 are part of the starter code
-  // var password = generatePassword();
-  // var passwordText = document.querySelector("#password");
-  // passwordText.value = password;
-  window.alert(passContent); // to see if each selection works - it does at the moment
+
+  var password = "";
+
+  // loop to select a random character from passContent
+  for (i = 0; i < passLength; i++) {
+    var choice = Math.floor(Math.random() * passContent.length);
+    password += passContent.substring(choice, choice +1);
+  }
+  
+  var passwordText = document.querySelector("#password");
+  
+  passwordText.value = password;
+
+  // window.alert(password); // to see if password gets generated - it does at the moment
+  // window.alert(passContent); // to see if each selection works - it does at the moment
 };
 
 // Add event listener to generate button
