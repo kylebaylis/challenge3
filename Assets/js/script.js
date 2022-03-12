@@ -38,19 +38,16 @@ function writePassword() {
         var passContent = passContent + passChar;
       }
     }
-    window.alert(passContent); // to see if each selection works
   }
   else {
     window.alert("Click 'Generate Password' if you change your mind!");
   }
-
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
+  // these 3 are part of the starter code
+  // var password = generatePassword();
+  // var passwordText = document.querySelector("#password");
+  // passwordText.value = password;
+  window.alert(passContent); // to see if each selection works - it does at the moment
 };
-
-
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
