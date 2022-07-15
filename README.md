@@ -8,7 +8,7 @@ This page will generate a password for you, depending on what options you select
     - numbers
     - special characters
 
-Link to site: https://kylebaylis.github.io/challenge3/
+Link to site: https://kylebaylis.github.io/password-generator/
 
 ![image](https://user-images.githubusercontent.com/98971970/158031770-91661032-3b32-417a-a3b5-2b09083f7e1e.png)
 
